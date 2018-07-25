@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Property Search</title>
+</head>
+<body>
+    <h2>Planning on renting? we can help!</h2>
+        <br>
+
+    <h4>What kind of property are you looking for?</h4>
+        <label for="rental">Select your rental type here:</label>
+        <select id="rental" name="rental">
+            <option>Condo</option>
+            <option>Apartment</option>
+            <option>Duplex</option>
+            <option>House</option>
+        </select>
+        <br>
+        <br>
+    <h4>Square footage of rental</h4>
+        <label for="sqft">Select your square feet here:</label>
+        <select id="sqft" name="sqft">
+            <option>700sqft</option>
+            <option>800sqft</option>
+            <option>900sqft</option>
+            <option>1000sqft</option>
+            <option>1200sqft</option>
+        </select>
+        <br>
+        <br>
+    <h4>Enter your minimum and maximum price range.</h4>
+    <input type="text" name="minimum" placeholder="minimum" required>
+    <input type="text" name="maximum" placeholder="maximum" required>
+        <br>
+        <br>
+    <h4>Zip Code</h4>
+        <label>Select Zip Code</label>
+        <select>
+            <option>78212</option>
+            <option>78217</option>
+            <option>78247</option>
+            <option>78248</option>
+        </select>
+    <h4>pets</h4>
+    <label>
+        <input type="radio" name="q1" value="cat">cat
+    </label>
+    <label>
+        <input type="radio" name="q1" value="dog">dog
+    </label>
+    <label>
+        <input type="radio" name="q1" value="none">none
+    </label>
+
+    <h4>Beds</h4>
+    <label for="beds">Beds:</label>
+    <select id="beds" name="beds">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+
+    <h4>Baths</h4>
+    <label for="Baths">Baths:</label>
+    <select id="Baths" name="Baths">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+    </select>
+    <br>
+    <br>
+    <button type="submit">Search Now</button>
+</body>
+</html>
