@@ -1,0 +1,50 @@
+body {
+    background-color:azure;
+    background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&h=350");
+    background-size: 300px 150px;
+    font-family: 'Teko', sans-serif;
+}
+
+h1, h2 {
+    background-color:rosybrown;
+    color:darkkhaki;
+    text-shadow: 1px 1px #000000;
+    text-decoration: underline;
+
+}
+table {
+    background-color:cadetblue;
+}
+
+li, p {
+    color: palevioletred;
+}
+
+strong {
+    color:darkseagreen;
+    text-shadow: 1px 1px #000000;
+}
+h1 {
+    text-align: center;
+}
+ol {
+    list-style-type: circle;
+}
+ul {
+    list-style-type: square;
+}
+table, th, td {
+    border: 1px solid black;
+}
+a:hover {
+    color: ghostwhite;
+}
+a:visited {
+    color:indianred
+}
+a:link {
+    color:lightgrey
+}
+a:active {
+    color:darkseagreen
+}
