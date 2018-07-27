@@ -5,39 +5,34 @@ body, html {
     margin: 0;
     font-family: Arial, Ubuntu, sans-serif;
 }
-.message-info {
-    color: blue;
-    background-color: var(--main-bg-info);
-    --main-bg-info: lightblue;
+.message {
     padding: 5px;
     margin: 8px;
     border-radius: 5px;
     border: 1px darkgrey;
+}
+
+.message-info {
+    color: blue;
+    background-color: var(--main-bg-info);
+    --main-bg-info: lightblue;
+
 }
 .message-success {
     color: green;
     background-color: var(--main-bg-success);
     --main-bg-success: lightgreen;
-    padding: 5px;
-    margin: 8px;
-    border-radius: 5px;
-    border: 1px darkgrey;
+
 }
 .message-warning {
     color: darkgoldenrod;
     background-color: var(--main-bg-warning);
     --main-bg-warning: lightyellow;
-    padding: 5px;
-    margin: 8px;
-    border-radius: 5px;
-    border: 1px darkgrey;
+
 }
 .message-error {
-    color: red;
+    color: darkred;
     background-color: var(--main-bg-error);
     --main-bg-error: lightpink;
-    padding: 5px;
-    margin: 8px;
-    border-radius: 5px;
-    border: 1px darkgrey;
+
 }
