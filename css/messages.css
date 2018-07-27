@@ -12,6 +12,7 @@ body, html {
     padding: 5px;
     margin: 8px;
     border-radius: 5px;
+    border: 1px darkgrey;
 }
 .message-success {
     color: green;
@@ -20,6 +21,7 @@ body, html {
     padding: 5px;
     margin: 8px;
     border-radius: 5px;
+    border: 1px darkgrey;
 }
 .message-warning {
     color: darkgoldenrod;
@@ -28,6 +30,7 @@ body, html {
     padding: 5px;
     margin: 8px;
     border-radius: 5px;
+    border: 1px darkgrey;
 }
 .message-error {
     color: red;
@@ -36,4 +39,5 @@ body, html {
     padding: 5px;
     margin: 8px;
     border-radius: 5px;
+    border: 1px darkgrey;
 }
