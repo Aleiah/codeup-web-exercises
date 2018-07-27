@@ -73,6 +73,7 @@ fieldset {
     /* The border of this element should be 1px, and its color should be light grey */
     padding: 8px;
     color: #FFFFFF;
+    border: 1px lightgrey;
     background-color: #0fb784;
 }
 
