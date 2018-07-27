@@ -12,27 +12,38 @@ body, html {
     border: 1px darkgrey;
 }
 
+.root {
+    --main-bg-info: #CEDFFE;
+    --main-bg-info-text: #49489C;
+    --main-bg-success: #D0F2DB;
+    --main-bg-success-text: #0E7E1E;
+    --main-bg-warning: #FCFACB;
+    --main-bg-warning-text: #B78521;
+    --main-bg-error: #F9D3D7;
+    --main-bg-error-text: #8B1F3D;
+}
+
 .message-info {
-    color: blue;
+    /*blue info message*/
     background-color: var(--main-bg-info);
-    --main-bg-info: lightblue;
+    color: var(--main-bg-info-text);
 
 }
 .message-success {
-    color: green;
+    /*green success message*/
     background-color: var(--main-bg-success);
-    --main-bg-success: lightgreen;
+    color: var(--main-bg-success-text);
 
 }
 .message-warning {
-    color: darkgoldenrod;
+    /*yellow warning message*/
     background-color: var(--main-bg-warning);
-    --main-bg-warning: lightyellow;
+    color: var(--main-bg-warning-text);
 
 }
 .message-error {
-    color: darkred;
+    /*red error message*/
     background-color: var(--main-bg-error);
-    --main-bg-error: lightpink;
+    color: var(--main-bg-error-text);
 
 }
