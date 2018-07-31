@@ -14,7 +14,6 @@ body {
 
     .alert-info {
         background-color: #CEFFFF;
-        border-color: #CBCBCB;
         text-align: center;
         padding: 1em;
         border: 1em;
@@ -46,16 +45,71 @@ body {
 
     }
     .main {
-        text-align: center;
+        text-align: left;
+
     }
 
     .sub-section {
-        text-align: center;
+        text-align: left;
         font-style: italic;
+
     }
 
+
+    p {
+        font-size: small;
+
+    }
+
+    h2 {
+        font-size: medium;
+    }
 }
 
 @media screen and (min-width:661px) {
 
+    .alert-info {
+     display: none;
+}
+
+    .nav-links {
+    padding:1 em;
+    margin: 0em 1em;
+    float: right;
+}
+    nav {
+    display: inline;
+}
+
+    li {
+    display: inline-block;
+    padding: 1em;
+}
+
+    .sub-section {
+    font-style: italic;
+    float: right;
+    text-align: left;
+    padding: 0em;
+    width: 17em;
+
+}
+
+    .main {
+    float: left;
+    text-align: left;
+    padding: 0em;
+    width: 20em;
+
+}
+
+    footer {
+
+    bottom: 0;
+    width: 100%;
+    }
+
+    .social-media-links {
+
+    }
 }
