@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/grid-layout.css">
     <title>Media Queries</title>
 </head>
 <body>
@@ -13,7 +14,10 @@
     <div class="alert-info hidden-on-desktop">
         <a href="#main">Skip to main content</a>
     </div>
+    <div class="column one-half">
     <h1>Company</h1>
+    </div>
+    <div class="column one-half">
     <nav>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -22,24 +26,30 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
+    </div>
+    <div class="full-column">
     <div class="header-img">
         <img src="img/bread.jpeg" alt="">
     </div>
+    </div>
+    <div class="column one-half">
     <section id="main" class="main">
         <h2>Main Section</h2>
         <p>Amet lorem accusantium maxime quis iusto. Sit aliquid quidem at animi commodi, iusto harum, non. Accusantium sequi consectetur deleniti soluta tempora. Maxime maiores blanditiis veritatis vitae amet maiores sapiente in?</p>
     </section>
+    </div>
+    <div class="column one-half">
     <section class="sub-section">
         <h2>Sub-section</h2>
         <p>Amet optio quidem voluptatum neque esse at saepe, reiciendis quaerat architecto unde minima aspernatur harum cum totam non amet soluta. Ea quae odio harum magni ab vitae tenetur. Itaque numquam!</p>
     </section>
+    </div>
     <footer>
-        <p>(c) 2017 All rights reserved</p>
-        <div id="social-media-links">
-            <img src="img/facebook.jpg" class="facebook">
-            <img src="img/instagram.png" class="instagram">
-            <img src="img/twitter.jpg" class="twitter">
-
+        <p class="column one-half">(c) 2017 All rights reserved</p>
+        <div class="column one-half" id="social-media-links">
+            <img  src="img/facebook.jpg" class="facebook">
+            <img  src="img/instagram.png" class="instagram">
+            <img  src="img/twitter.jpg" class="twitter">
         </div>
     </footer>
 </body>
