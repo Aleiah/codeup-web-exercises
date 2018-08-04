@@ -15,8 +15,23 @@ h1.transbox {
 
 .card-header {
     background: #F7F7F7;
-}
-
-.card-header {
     list-style: none;
 }
+
+.form-check {
+    background: #DAEDF6
+}
+.p-3 {
+    padding: $spacer !important;
+
+}
+.list-group-item {
+    background: #DAEDF6
+
+
+}
+.sauce {
+    background: #DAEDF6
+}
+
+
