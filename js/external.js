@@ -44,11 +44,13 @@ var total = amazonHours*amazonRate + googleHours*googleRate +facebookHours*faceb
 console.log("after working " + totalHours + "at google,facebook,and amazon we made: $" + total + "!");
 console.log(message);
 
-(student enrolling in class in notes!!!)
+var classNotFull = true;
+var worksWithSchedule = true;
+var canBeEnrolledInClass = classNotFull && worksWithSchedule;
 
 var moreThanTwoItems = True;
 var offerIsValid = true;
-var premiummembers
+var isPremiumMember = false;
 var offerCanBeApplied = offerIsValid && (moreThanTwoItems || isPremiumMember);
 
 var isLoggedIn = false;
@@ -83,4 +85,3 @@ if(credentialsAreGood) {
 
 
 
-(WILL BE UPLOADED PLS EDIT)

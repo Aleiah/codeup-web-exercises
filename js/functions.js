@@ -132,4 +132,3 @@ function applyDiscount(Price, Discount) {
     return Price * Discount;
 }
 console.log(applyDiscount (salePrice, discountPrice));
-console.log("TEST")
