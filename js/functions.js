@@ -96,8 +96,8 @@ console.log(random);
 
 
 
-var billTotal = prompt("How much was your total amount spent?");
-var tipPercentage = prompt("How much would you like to tip?");
+var billTotal = parseFloat(prompt("How much was your total amount spent?"));
+var tipPercentage = parseFloat(prompt("How much would you like to tip?"));
 function calculateTip(billTotal, tipPercentage) {
     return billTotal * tipPercentage;
 }
@@ -124,11 +124,14 @@ alert("This is how much you should tip: $"  + tip );
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
 
-var salePrice = 100;
-var discountPrice = .2;
 
-
-function applyDiscount(Price, Discount) {
-    return Price * Discount;
+function applyDiscount(price, DiscountPercent) {
+    var discount = price * DiscountPercent;
+    return price - discount;
 }
-console.log(applyDiscount (salePrice, discountPrice));
+var salePrice = 100;
+var discountPercent = .2;
+console.log(applyDiscount(salePrice, discountPercent));
+
+console.log(applyDiscount(salePrice, discountPercent));
+
