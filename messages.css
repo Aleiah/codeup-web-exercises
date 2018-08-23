@@ -1,0 +1,49 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Ubuntu, sans-serif;
+}
+.message {
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px darkgrey;
+}
+
+.root {
+    --main-bg-info: #CEDFFE;
+    --main-bg-info-text: #49489C;
+    --main-bg-success: #D0F2DB;
+    --main-bg-success-text: #0E7E1E;
+    --main-bg-warning: #FCFACB;
+    --main-bg-warning-text: #B78521;
+    --main-bg-error: #F9D3D7;
+    --main-bg-error-text: #8B1F3D;
+}
+
+.message-info {
+    /*blue info message*/
+    background-color: var(--main-bg-info);
+    color: var(--main-bg-info-text);
+
+}
+.message-success {
+    /*green success message*/
+    background-color: var(--main-bg-success);
+    color: var(--main-bg-success-text);
+
+}
+.message-warning {
+    /*yellow warning message*/
+    background-color: var(--main-bg-warning);
+    color: var(--main-bg-warning-text);
+
+}
+.message-error {
+    /*red error message*/
+    background-color: var(--main-bg-error);
+    color: var(--main-bg-error-text);
+
+}

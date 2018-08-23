@@ -1,0 +1,154 @@
+
+body {
+    font-family: sans-serif;
+
+}
+
+#social-media-links>img {
+    float: right;
+
+
+}
+
+footer {
+    font-size: small;
+}
+
+
+
+@media screen and (max-width:660px) {
+
+
+    div.alert-info>a:link {
+        text-decoration: none;
+        color: black;
+    }
+
+    .alert-info {
+        background-color: #CEFFFF;
+        text-align: center;
+        padding: 1em;
+        border: 1em;
+        margin: .5em;
+    }
+
+    .nav-links>li {
+        padding: .5em;
+        border: 0em;
+        margin: .5em;
+        /*width: 80%;*/
+        list-style-type: none;
+        text-align: center;
+        background-color: #CBCBCB;
+        border-color: #CBCBCB;
+    }
+
+    h1 {
+
+        text-align: center;
+        margin-top: .5em;
+        margin-bottom: 1em;
+    }
+
+    img {
+        /*width: 80%;*/
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+    .main {
+        text-align: left;
+
+    }
+
+    .sub-section {
+        text-align: left;
+        font-style: italic;
+
+    }
+
+
+    p {
+        font-size: small;
+
+    }
+
+    h2 {
+        font-size: medium;
+    }
+}
+
+@media screen and (min-width:661px) {
+
+    .alert-info {
+     display: none;
+}
+    body {
+        max-width: 1281px;
+    }
+
+    .nav-links {
+        padding: 1px;
+    margin: 0em 0em;
+    float: right;
+}
+    nav {
+    display: inline;
+}
+
+    li {
+    display: inline-block;
+    padding: 1em;
+}
+
+    .sub-section {
+    font-style: italic;
+    float: left;
+    text-align: left;
+    padding: 1em;
+    /*width: 19em;*/
+
+}
+
+    .main {
+    float: left;
+    text-align: left;
+    padding: 0em;
+    /*width: 35em;*/
+
+}
+
+
+
+    }
+   .facebook {
+       width: 50px;
+       height: auto;
+       border-radius: 50px;
+
+   }
+
+   .instagram {
+       width: 50px;
+       height: auto;
+
+   }
+
+   .twitter {
+       margin: 5px;
+       width: 39px;
+       height: auto;
+       border-radius: 80px;
+   }
+
+   .header-img {
+   text-align: center;
+   }
+   /*div>img {*/
+
+       /*width: 100%;*/
+
+   /*}*/
+
+/*}*/

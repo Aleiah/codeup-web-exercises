@@ -42,6 +42,7 @@
     (function() {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
+<<<<<<< HEAD
 
         var mainHeader = document.getElementById("main-header");
 
@@ -73,6 +74,19 @@
 
         // TODO: Uncomment the next line and get the sub header element by id
 
+=======
+        var mainHeader = document.getElementById("main-header");
+        var buttonOne = function (event) {
+            mainHeader.innerText = "Java Script is Cool!";
+        }; document.getElementById('btn-1').addEventListener('click', buttonOne, false);
+
+
+        // // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+        console.log(mainHeader.innerHTML);
+
+        // TODO: Uncomment the next line and get the sub header element by id
+        var subHeader = document.getElementById("sub-header");
+>>>>>>> master
 
 
         // TODO: Set the text color of subHeader to blue
@@ -80,9 +94,12 @@
 
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName('li');
+<<<<<<< HEAD
         listItems.forEach(function(li, i) {
             li.addEventListener('click', buttonFour, false)
         });
+=======
+>>>>>>> master
 
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
@@ -92,7 +109,11 @@
                 i++;
             }}
 
+<<<<<<< HEAD
         var buttotFour = document.getElementsByTagName('li')[0].style.color = "blue";
+=======
+        document.getElementsByTagName('li')[0].style.color = "blue";
+>>>>>>> master
 
 
 

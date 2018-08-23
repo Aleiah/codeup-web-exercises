@@ -1,0 +1,32 @@
+/* selector for id="container" */
+#container {
+    color: pink;
+    font-size: large;
+}
+
+
+
+/*  selector for all "h1" elements
+    that are a descendent of id="container"
+    and have a class of "fancy-header" */
+#container, h1.fancy-header {
+    color: darkseagreen;
+}
+
+
+
+/* selector for all "em" elements */
+em {
+    color: blue;
+}
+
+/* selector for all elements with class="article" */
+.article {
+    color: hotpink;
+}
+
+/*  selector for all "anchor" elements
+    that are a direct child of an element with class="article" */
+.article > a {
+    color: aquamarine;
+}
