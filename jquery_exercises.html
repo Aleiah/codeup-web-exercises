@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery DEMO</title>
+    <style>
+        /** {*/
+            /*background-color: darkseagreen;*/
+        /*}*/
+        /*ul {*/
+            /*list-style: none;*/
+        /*}*/
+        /*li {*/
+            /*margin: .5em;*/
+            /*color: #DAEDF6;*/
+
+        /*}*/
+        /*p {*/
+            /*color: #F9D3D7;*/
+            /*text-shadow: 2px 2px 2px #000;*/
+        /*}*/
+
+        /*.important {*/
+            /*color: indianred;*/
+        /*}*/
+        /*#items {*/
+            /*color: #DDDDDD;*/
+        /*}*/
+        /*#another-item {*/
+
+        /*}*/
+        .the-color {
+            background-color: lightpink;
+        }
+        #the-font {
+           font-size: 20px;
+        }
+        h1 {
+            alert("Hello");
+        }
+    </style>
+</head>
+<body>
+<main>
+<h1 class="the-color">JQuery</h1>
+<p class="the-color">JQuery is a great tool for connecting HTML and JS.</p>
+<h2>Reasons to use JQuery</h2>
+<ul>
+    <li id="the-font" class="the-color">Provides a consistent API for assessing the documents content</li>
+    <li class="the-color">Uses CSS selectors to et your hands on HTML elements.</li>
+    <li class="the-color">Affords a simplified AJAX library</li>
+    <li class="the-color">Easy and simple even listeners</li>
+</ul>
+</main>
+<script type="text/javascript" src="jquery-2.x.js"></script>
+<script>
+    "use strict";
+    $("h1").click(function(){
+        alert("HELLO");
+    });
+    //     $('.important, p').css('background-color', '#F9D3D7');
+    //     $('p').textShadow();
+    // });
+    $('li').css('font-size', '20px');
+    $('h1', 'p', 'li').css('background-color', 'pink');
+
+</script>
+
+
+</body>
+</html>
