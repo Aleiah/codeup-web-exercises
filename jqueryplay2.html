@@ -1,0 +1,85 @@
+
+​
+<html lang="en">
+<head>
+    <title>PLAY2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="text/javascript" src="jquery-2.x.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style >
+        body {
+            color: thistle;
+            background-color: rosybrown;
+        }
+        .highlighted {
+            background-color: #FCFACB;
+
+        }
+        .underlined {
+            text-decoration: underline;
+            text-align: center;
+        }
+
+    </style>
+</head>
+​
+​
+<body>
+<div class="container">
+    <div class='jumbotron'>
+        <h1>jQuery!</h1>
+    </div>
+    ​
+        <ul>
+            <li id="cats" class="highlighted">
+                <h3>Cats</h3>
+                <ul>
+                    <li>Tabby</li>
+                    <li>Lion</li>
+                    <li>Ocelot</li>
+                    <li>Jaguar</li>
+                </ul>
+            </li>
+            <li id="dogs" class="highlighted">
+                <h3>Dogs</h3>
+                <ul>
+                    <li>Dachshund</li>
+                    <li>Saluki</li>
+                    <li>Corgi</li>
+                    <li>Great dane</li>
+                    <li>Pitbull</li>
+                    <li>Lab</li>
+                </ul>
+            </li>
+            <li id="bears" class="highlighted">
+                <h3>Bears</h3>
+                <ul>
+                    <li>Black</li>
+                    <li>Polar</li>
+                    <li>Brown</li>
+                </ul>
+            </li>
+            ​
+        </ul>
+
+    <footer>
+        ​
+    </footer>
+    ​
+</div>
+​
+<script type="text/javascript" src="jquery-2.x.js"></script>
+<script>
+    $('li').each(function(index) {
+        if (index % 2 !== 0) {
+            $(this).css('background-color', '#D0F2DB');
+        }
+    });
+
+    $('li').first().css('background-color', 'peachpuff');
+
+</script>
+</body>
+</html>

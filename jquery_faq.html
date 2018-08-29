@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery_faq</title>
+
+    <style>
+        body {
+            background-color: darkseagreen;
+            text-align: center;
+        }
+        .invisible {
+            display: none;
+            background-color: #D0F2DB;
+            font-family: cursive;
+        }
+        dt {
+
+        }
+    </style>
+
+</head>
+<body>
+<h1> 10 FAQs about National Parks.</h1>
+<h1> ¯\_(ツ)_/¯</h1>
+<dl>
+    <dt>The National Park System covers more than 84 million acres?</dt>
+    <dd class="invisible">Yellowstone was deemed the first national park on March 1, 1872.</dd>
+    <dt>There's at least 247 species of threatened/endangered plants and animals?</dt>
+    <dd class="invisible">The budget for fiscal year 2015 was $2.8 billion.</dd>
+    <dt>There's a total of 87 national monuments?</dt>
+    <dd class="invisible">The NPS manages the 417 parks of the National Park System.</dd>
+    <dt>The highest point in North America is Mount McKinley National Park and Preserve, Alaska?</dt>
+    <dd class="invisible">The longest cave system in the world is at Mammoth Cave National Park, Kentucky.</dd>
+    <dt>The White Sands National Monument spans more than 176,000 acres of New Mexico desert?</dt>
+    <dd class="invisible">The Sequoia National Park, California is home to the largest living single-stem tree in the world.</dd>
+</dl>
+
+
+<script type="text/javascript" src="jquery-2.x.js"></script>
+<script>
+
+    $("dt").click(function(e){
+        $('dd').toggleClass('invisible').slideDown(100);
+    });
+
+</script>
+
+
+</body>
+</html>
