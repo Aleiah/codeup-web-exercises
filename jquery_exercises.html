@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JQuery DEMO</title>
+    <title>JQuery Exercises</title>
     <style>
         /** {*/
             /*background-color: darkseagreen;*/
@@ -16,7 +16,8 @@
 
         /*}*/
         /*p {*/
-            /*color: #F9D3D7;*/
+
+            /*color: #8B1F3D;*/
             /*text-shadow: 2px 2px 2px #000;*/
         /*}*/
 
@@ -29,15 +30,15 @@
         /*#another-item {*/
 
         /*}*/
-        .the-color {
-            background-color: lightpink;
-        }
-        #the-font {
-           font-size: 20px;
-        }
-        h1 {
-            alert("Hello");
-        }
+        /*.the-color {*/
+            /*background-color: lightpink;*/
+        /*}*/
+        /*#the-font {*/
+           /*font-size: 20px;*/
+        /*}*/
+        /*h1 {*/
+            /*alert("Hello");*/
+        /*}*/
     </style>
 </head>
 <body>
@@ -55,14 +56,35 @@
 <script type="text/javascript" src="jquery-2.x.js"></script>
 <script>
     "use strict";
-    $("h1").click(function(){
-        alert("HELLO");
-    });
+    // $("h1").click(function(){
+    //     alert("HELLO");
+    // });
     //     $('.important, p').css('background-color', '#F9D3D7');
     //     $('p').textShadow();
     // });
-    $('li').css('font-size', '20px');
-    $('h1', 'p', 'li').css('background-color', 'pink');
+    // $('li').css('font-size', '20px');
+    $(function() {
+        $("h1").click(function() {
+            $(this).css("background-color", "pink");
+        });
+
+        $('p').dblclick(function() {
+            $(this).css('font-size', '18px');
+        });
+
+
+        $('li').hover(
+            function() {
+                $(this).css('color', 'red');
+            },
+            function() {
+                $(this).css('color', 'black');
+            }
+        );
+
+    });
+
+
 
 </script>
 
