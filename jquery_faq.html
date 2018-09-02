@@ -14,12 +14,66 @@
             background-color: #D0F2DB;
             font-family: cursive;
         }
+        .modal-notify .modal-header {
+            border-radius: 3px 3px 0 0;
+            background-color: #ffa6b1;
+        }
+        .modal-notify .modal-content {
+            border-radius: 3px;
+        }
     </style>
 
 </head>
 <body>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <h1><strong>Would you like to sign up for our newsletter?</strong></h1>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">X</span>
+    </button>
+</div>
+
+<div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-warning bg-warning" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h4 class="modal-title white-text w-100 font-weight-bold py-2">Register for emails about National Parks</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+                <div class="md-form mb-5">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" id="form3" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="form2" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form2">Your email</label>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btn-outline-warning waves-effect">Send <i class="fa fa-paper-plane-o ml-1"></i></a>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+
+<div class="text-center">
+    <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#orangeModalSubscription">Launch modal Subscription</a>
+</div>
+
+
 <h1> 10 FAQs about National Parks.</h1>
-<h1> ¯\_(ツ)_/¯</h1>
 <dl>
     <dt>The National Park System covers more than 84 million acres?</dt>
     <dd class="invisible">Yellowstone was deemed the first national park on March 1, 1872.</dd>
@@ -36,17 +90,17 @@
 <br>
 <br>
 
-<button type="button" class="btn-1">My favorite facts!</button>
+<button type="button" class="btn-1 btn btn-outline-secondary">My favorite facts!</button>
 <br>
 <br>
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <li id="glacier">
+            <li id="glacier" class="parks">
                 <br>
                 <div class="glacier"><img src="../img/glacier.jpeg" alt="mountain" width="200" height="200"></div>
                 <h3>Glacier</h3>
-                <ul>
+                <ul id="glacier-state-park">
                     <li>Mountain goats are an imporant part of the identity of the park.</li>
                     <li>The park straddles the Continental Divide, allowing for extreme weather.</li>
                     <li>Evidence of human use in the area dates back over 12,000 years. </li>
@@ -55,10 +109,10 @@
             </li>
         </div>
         <div class="col-sm">
-            <li id="big-bend">
+            <li id="big-bend" class="parks">
                 <div class="big-bend"><img src="../img/big-bend.jpeg" alt="big-bend" width="200" height="200"></div>
                 <h3>Big Bend</h3>
-                <ul>
+                <ul id="big-bend-state-park">
                     <li>Hot Springs are located in Big Bend National Park</li>
                     <li>The park is named Big Bend after the river's big bend in west Texas.</li>
                     <li>There are over 60 different species of cactus found in Big Bend National Park </li>
@@ -67,10 +121,10 @@
             </li>
         </div>
         <div class="col-sm">
-            <li id="dry-tortugas">
+            <li id="dry-tortugas" class="parks">
                 <div class="dry"><img src="../img/dry-tortugas.jpeg" alt="water" width="200" height="200"></div>
                 <h3>Dry Tortugas</h3>
-                <ul>
+                <ul id="dry-tortugas-state-park">
                     <li>The 'Dry' in Dry Tortugas is used to refer to the Island's lack of surface fresh water.</li>
                     <li>Dry Tortugas National Park is comprised of 99% water</li>
                     <li>There are more than 299 bird species that can be found in Dry Tortugas National Park.</li>
@@ -102,6 +156,10 @@
 
     $("li").click(function(e){
         $(this).css('color', 'blue');
+    });
+
+    $("h3").click(function(e){
+        $('ul').toggle('parks').slideDown(100);
     });
 
 
