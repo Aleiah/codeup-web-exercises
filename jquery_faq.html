@@ -28,11 +28,12 @@
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
     <h1><strong>Would you like to sign up for our newsletter?</strong></h1>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
         <span aria-hidden="true">X</span>
     </button>
 </div>
 
-<div class="modal fade" id="orangeModalSubscription" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-notify modal-warning bg-warning" role="document">
         <!--Content-->
         <div class="modal-content">
@@ -157,11 +158,17 @@
     $("li").click(function(e){
         $(this).css('color', 'blue');
     });
+    //
+    // $("h3").click(function(e){
+    //     $('ul').toggle('parks').slideDown(100);
+    // });
 
-    $("h3").click(function(e){
-        $('ul').toggle('parks').slideDown(100);
+
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('#myModal').modal('show');
+        }, 2000);
     });
-
 
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
