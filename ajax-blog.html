@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>blog</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+            background-color: thistle;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+        h1 {
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+
+<div id="posts" class="table">
+    <thead>
+    <tr>
+        <th>title</th>
+        <th>Content</th>
+        <th>categories</th>
+        <th>date</th>
+    </tr>
+    </thead>
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $(function() {
+
+
+        var listPosts = function () {
+            $.get("./data/blog.json").done(function(data) {
+
+                $('#posts').html("");
+                data.forEach(function(post) {
+                    var entry = "";
+                    entry += "<h3 class='title'>" + post.title + "</h3>"
+                    entry += "<h6 class='content'>" + post.content + "</h6>"
+                    entry += "<h6 class='categories'>" + post.categories + "</h6>"
+                    entry += "<h6 class='date'>" + post.date + "</h6>"
+
+
+
+                    $('#posts').append(entry);
+
+            });
+
+        });
+    }
+
+    listPosts();
+
+
+        $('#refresh').click(function() {
+    listPosts();
+})});
+
+
+</script>
+</body>
+</html>

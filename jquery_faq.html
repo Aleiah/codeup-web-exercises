@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery_faq</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: darkseagreen;
+            text-align: center;
+        }
+        .invisible {
+            display: none;
+            background-color: #D0F2DB;
+            font-family: cursive;
+        }
+        .modal-notify .modal-header {
+            border-radius: 3px 3px 0 0;
+            background-color: #ffa6b1;
+        }
+        .modal-notify .modal-content {
+            border-radius: 3px;
+        }
+    </style>
+
+</head>
+<body>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <h1><strong>Would you like to sign up for our newsletter?</strong></h1>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+
+        <span aria-hidden="true">X</span>
+    </button>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-warning bg-warning" role="document">
+        <!--Content-->
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header text-center">
+                <h4 class="modal-title white-text w-100 font-weight-bold py-2">Register for emails about National Parks</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">&times;</span>
+                </button>
+            </div>
+
+            <!--Body-->
+            <div class="modal-body">
+                <div class="md-form mb-5">
+                    <i class="fa fa-user prefix grey-text"></i>
+                    <input type="text" id="form3" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form3">Your name</label>
+                </div>
+
+                <div class="md-form">
+                    <i class="fa fa-envelope prefix grey-text"></i>
+                    <input type="email" id="form2" class="form-control validate">
+                    <label data-error="wrong" data-success="right" for="form2">Your email</label>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btn-outline-warning waves-effect">Send <i class="fa fa-paper-plane-o ml-1"></i></a>
+            </div>
+        </div>
+        <!--/.Content-->
+    </div>
+</div>
+
+<div class="text-center">
+    <a href="" class="btn btn-default btn-rounded" data-toggle="modal" data-target="#orangeModalSubscription">Launch modal Subscription</a>
+</div>
+
+
+<h1> 10 FAQs about National Parks.</h1>
+<dl>
+    <dt>The National Park System covers more than 84 million acres?</dt>
+    <dd class="invisible">Yellowstone was deemed the first national park on March 1, 1872.</dd>
+    <dt>There's at least 247 species of threatened/endangered plants and animals?</dt>
+    <dd class="invisible">The budget for fiscal year 2015 was $2.8 billion.</dd>
+    <dt>There's a total of 87 national monuments?</dt>
+    <dd class="invisible">The NPS manages the 417 parks of the National Park System.</dd>
+    <dt>The highest point in North America is Mount McKinley National Park and Preserve, Alaska?</dt>
+    <dd class="invisible">The longest cave system in the world is at Mammoth Cave National Park, Kentucky.</dd>
+    <dt>The White Sands National Monument spans more than 176,000 acres of New Mexico desert?</dt>
+    <dd class="invisible">The Sequoia National Park, California is home to the largest living single-stem tree in the world.</dd>
+</dl>
+<hr>
+<br>
+<br>
+
+<button type="button" class="btn-1 btn btn-outline-secondary">My favorite facts!</button>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <li id="glacier" class="parks">
+                <br>
+                <div class="glacier"><img src="../img/glacier.jpeg" alt="mountain" width="200" height="200"></div>
+                <h3>Glacier</h3>
+                <ul id="glacier-state-park">
+                    <li>Mountain goats are an imporant part of the identity of the park.</li>
+                    <li>The park straddles the Continental Divide, allowing for extreme weather.</li>
+                    <li>Evidence of human use in the area dates back over 12,000 years. </li>
+                    <li class="highlighted">The largest glacier in the park is 0.7 square miles.</li>
+                </ul>
+            </li>
+        </div>
+        <div class="col-sm">
+            <li id="big-bend" class="parks">
+                <div class="big-bend"><img src="../img/big-bend.jpeg" alt="big-bend" width="200" height="200"></div>
+                <h3>Big Bend</h3>
+                <ul id="big-bend-state-park">
+                    <li>Hot Springs are located in Big Bend National Park</li>
+                    <li>The park is named Big Bend after the river's big bend in west Texas.</li>
+                    <li>There are over 60 different species of cactus found in Big Bend National Park </li>
+                    <li class="highlighted">The Chisos Mountains are the only mountain range in the United States contained within a national park.</li>
+                </ul>
+            </li>
+        </div>
+        <div class="col-sm">
+            <li id="dry-tortugas" class="parks">
+                <div class="dry"><img src="../img/dry-tortugas.jpeg" alt="water" width="200" height="200"></div>
+                <h3>Dry Tortugas</h3>
+                <ul id="dry-tortugas-state-park">
+                    <li>The 'Dry' in Dry Tortugas is used to refer to the Island's lack of surface fresh water.</li>
+                    <li>Dry Tortugas National Park is comprised of 99% water</li>
+                    <li>There are more than 299 bird species that can be found in Dry Tortugas National Park.</li>
+                    <li class="highlighted">The Dry Tortugas are a popular place for sea turtles to nest.</li>
+                </ul>
+            </li>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="jquery-2.x.js"></script>
+<script>
+
+    $("dt").click(function(e){
+        $('dd').toggleClass('invisible').slideDown(100);
+    });
+
+    $(".btn-1").click(function(e){
+        $('li').next().next().next().css('background-color', '#fcffa9');
+    });
+
+    $('li, ul').css('list-style-type', 'none');
+
+
+    $("h3").click(function(e){
+        $('li').css('font-weight', 'bold');
+    });
+
+    $("li").click(function(e){
+        $(this).css('color', 'blue');
+    });
+    //
+    // $("h3").click(function(e){
+    //     $('ul').toggle('parks').slideDown(100);
+    // });
+
+
+    $(document).ready(function(){
+        setTimeout(function(){
+            $('#myModal').modal('show');
+        }, 2000);
+    });
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
